@@ -48,6 +48,7 @@ const LandingPage = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 4.5, duration: 0.8 }}
+          style={{ marginBottom: '6rem' }} 
         >
           <Link to="/timeline" className="cta-button">
             Relive Our Weekend ??

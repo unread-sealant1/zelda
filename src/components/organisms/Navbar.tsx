@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Heart } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Navbar = () => {
@@ -46,14 +45,6 @@ const Navbar = () => {
             {item.name}
           </Link>
         ))}
-      </div>
-
-      <div className="navbar-heart-wrapper">
-        <Heart
-          size={20}
-          className="navbar-heart"
-          onClick={() => alert('I Love You ??')}
-        />
       </div>
     </motion.nav>
   );
