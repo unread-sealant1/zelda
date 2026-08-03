@@ -446,3 +446,57 @@ body {
   margin-top: 0 !important;
   padding-top: 2rem !important;
 }
+
+/* Make the landing page scrollable if content exceeds height */
+.landing-container {
+  min-height: 100vh;
+  height: auto !important;
+  overflow-y: auto !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Mobile Navbar Fix */
+.nav-links {
+  display: none; /* Default hidden */
+}
+
+@media (min-width: 768px) {
+  .nav-links { 
+    display: flex !important; 
+  }
+}
+
+/* Mobile Burger Menu (Simplified for stability) */
+.navbar {
+  padding: 1rem !important;
+}
+
+.navbar-logo {
+  font-size: 1.2rem !important;
+}
+
+/* To avoid complex JS burger menus that might crash, 
+   we will make the nav-links a simple wrap-around on mobile 
+   or a centered list when the screen is small */
+@media (max-width: 767px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem !important;
+  }
+  .nav-links {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+  }
+  .nav-item {
+    font-size: 0.7rem !important;
+  }
+}
