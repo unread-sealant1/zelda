@@ -6,7 +6,14 @@ const MemoriesPage = () => {
   return (
     <div className="memories-page">
       <div className="memories-header">
-        <h1 className="font-romantic" style={{fontSize: '4rem', color: 'var(--color-rose-pink)'}}>Little Things</h1>
+        <motion.h1 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="font-romantic" 
+          style={{fontSize: '4rem', color: 'var(--color-rose-pink)'}}
+        >
+          Little Things
+        </motion.h1>
         <p className="font-ui italic">The fragments of joy that make up our whole.</p>
       </div>
       <div className="memories-grid">

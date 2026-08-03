@@ -6,7 +6,14 @@ const FuturePage = () => {
   return (
     <div className="memories-page">
       <div className="memories-header">
-        <h1 className="font-romantic" style={{fontSize: '4rem', color: 'var(--color-rose-pink)'}}>Our Future</h1>
+        <motion.h1 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="font-romantic" 
+          style={{fontSize: '4rem', color: 'var(--color-rose-pink)'}}
+        >
+          Our Future
+        </motion.h1>
         <p className="font-ui italic">The dreams we have yet to touch.</p>
       </div>
       <div className="future-grid">

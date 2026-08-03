@@ -23,5 +23,4 @@ const CourtCasePage = () => {
     </div>
   );
 };
-
 export default CourtCasePage;

@@ -6,7 +6,14 @@ const LettersPage = () => {
   return (
     <div className="letters-page">
       <div className="gallery-header">
-        <h1 className="font-romantic" style={{fontSize: '4rem', color: 'var(--color-rose-pink)'}}>Letters</h1>
+        <motion.h1 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="font-romantic" 
+          style={{fontSize: '4rem', color: 'var(--color-rose-pink)'}}
+        >
+          Letters
+        </motion.h1>
       </div>
       {lettersData.map((letter, i) => (
         <motion.div 
