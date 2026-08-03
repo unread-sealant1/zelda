@@ -63,32 +63,69 @@ body {
 .footer-dates { font-family: var(--font-ui); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; }
 .footer-subtitle { font-family: var(--font-ui); font-size: 0.9rem; font-style: italic; opacity: 0.7; }
 
-.timeline-page { padding: 120px 1rem 4rem 1rem; max-width: 1000px; margin: 0 auto; }
+/* TIMELINE RE-FIX */
+.timeline-page { padding: 120px 1rem 4rem 1rem; max-width: 1100px; margin: 0 auto; }
 .timeline-header { text-align: center; margin-bottom: 4rem; }
 .timeline-header h1 { font-family: var(--font-romantic); font-size: clamp(3rem, 8vw, 4rem); color: var(--color-rose-pink); }
-.timeline-container { position: relative; padding: 0 1rem; }
-.timeline-line { position: absolute; left: 50%; top: 0; bottom: 0; width: 2px; background: var(--color-champagne-gold); transform: translateX(-50%); }
-.timeline-item { display: flex; justify-content: center; margin-bottom: 4rem; position: relative; width: 100%; }
+
+.timeline-container { position: relative; width: 100%; }
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, transparent, var(--color-champagne-gold), var(--color-rose-pink), transparent);
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.timeline-item {
+  position: relative;
+  width: 100%;
+  margin-bottom: 4rem;
+  display: flex;
+  z-index: 2;
+}
+
+.timeline-item.left { justify-content: flex-start; }
 .timeline-item.right { justify-content: flex-end; }
+
 .timeline-content {
-  width: clamp(300px, 45%, 500px); padding: 2rem;
-  background: white; border-radius: 2rem;
+  width: 42%;
+  padding: 2rem;
+  background: white;
+  border-radius: 2rem;
   box-shadow: 0 10px 30px rgba(0,0,0,0.05);
   border: 1px solid var(--color-champagne-gold);
-  display: flex; flex-direction: column; align-items: center; text-align: center;
+  position: relative;
 }
-.timeline-date { font-family: var(--font-purpose); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-rose-pink); margin-bottom: 0.5rem; display: block; }
-.timeline-title { font-family: var(--font-romantic); font-size: 2.5rem; color: var(--color-warm-grey); margin-bottom: 1rem; }
-.timeline-story { font-family: var(--font-ui); font-size: 1rem; line-height: 1.6; color: var(--color-warm-grey); margin-bottom: 1.5rem; }
-.timeline-dot { position: absolute; left: 50%; top: 2rem; width: 12px; height: 12px; background: var(--color-rose-pink); border-radius: 50%; transform: translateX(-50%); z-index: 3; box-shadow: 0 0 0 4px var(--color-soft-white), 0 0 0 6px var(--color-champagne-gold); }
+
+.timeline-dot {
+  position: absolute;
+  left: 50%;
+  top: 2rem;
+  width: 16px;
+  height: 16px;
+  background: var(--color-rose-pink);
+  border-radius: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  box-shadow: 0 0 0 4px var(--color-soft-white), 0 0 0 6px var(--color-champagne-gold);
+}
+
+.timeline-date { font-family: var(--font-purpose); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-rose-pink); display: block; margin-bottom: 0.5rem; }
+.timeline-title { font-family: var(--font-romantic); font-size: 2.2rem; color: var(--color-warm-grey); margin-bottom: 1rem; }
+.timeline-story { font-family: var(--font-ui); font-size: 1rem; line-height: 1.6; color: var(--color-warm-grey); }
+
 @media (max-width: 768px) {
-  .timeline-line { left: 20px; }
-  .timeline-dot { left: 20px; }
-  .timeline-item { justify-content: flex-start; padding-left: 40px; }
-  .timeline-item.right { justify-content: flex-start; }
+  .timeline-line { left: 30px; }
+  .timeline-dot { left: 30px; }
+  .timeline-item, .timeline-item.right { justify-content: flex-start; padding-left: 60px; }
   .timeline-content { width: 100%; }
 }
 
+/* Other Pages */
 .gallery-page { padding: 120px 1rem 4rem 1rem; max-width: 1200px; margin: 0 auto; }
 .gallery-header { text-align: center; margin-bottom: 4rem; }
 .gallery-header h1 { font-family: var(--font-romantic); font-size: 4rem; color: var(--color-rose-pink); margin-bottom: 1rem; }
