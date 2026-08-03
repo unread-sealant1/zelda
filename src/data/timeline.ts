@@ -1,0 +1,83 @@
+import { TimelineEvent } from './types';
+
+export const timelineData: TimelineEvent[] = [
+  {
+    id: 'sat-1',
+    date: 'Saturday',
+    title: 'The Anticipation',
+    story: 'The hours leading up to it. The nerves. The excitement. The feeling that today was going to be different.',
+    photos: ['photo_1.jpeg'],
+    notes: 'Countdown to the moment.',
+  },
+  {
+    id: 'sat-2',
+    date: 'Saturday',
+    title: 'The First Meeting',
+    story: 'The world stopped for a second when our eyes first met. Everything else just became background noise.',
+    placeholderText: 'Some memories are too beautiful to be captured. This one belongs only to us.',
+  },
+  {
+    id: 'sat-3',
+    date: 'Saturday',
+    title: 'Walking Together',
+    story: 'Just walking and talking, discovering the rhythms of each other. The simple act of being side-by-side felt natural.',
+    photos: ['photo_2.jpeg'],
+  },
+  {
+    id: 'sat-4',
+    date: 'Saturday',
+    title: 'Holding Hands',
+    story: 'The first time our hands intertwined. A small gesture that felt like a giant leap.',
+    photos: ['photo_3.jpeg'],
+  },
+  {
+    id: 'sat-5',
+    date: 'Saturday',
+    title: 'The Eye Contact',
+    story: 'You kept avoiding eye contact. Every time I asked you to look at me, you smiled, looked away, then slowly looked back. I still smile thinking about it.',
+    photos: ['photo_4.jpeg'],
+  },
+  {
+    id: 'sat-6',
+    date: 'Saturday',
+    title: 'Resting On My Shoulder',
+    story: 'The moment you rested your head on my shoulder, everything else disappeared. Time stopped.',
+    photos: ['photo_5.jpeg'],
+  },
+  {
+    id: 'sat-7',
+    date: 'Saturday',
+    title: 'Saturday Ending',
+    story: 'Five hours. It felt like two minutes. I wasn\'t ready to say goodbye.',
+    photos: ['photo_6.jpeg'],
+  },
+  {
+    id: 'sun-1',
+    date: 'Sunday',
+    title: 'Meeting Again',
+    story: 'The relief of seeing you again. The second day, the day I\'ll never forget.',
+    photos: ['photo_7.jpeg'],
+  },
+  {
+    id: 'sun-2',
+    date: 'Sunday',
+    title: 'The Connection',
+    story: 'Walking, talking, and more smiles. Each moment building on the last, confirming what we both felt.',
+    photos: ['photo_8.jpeg'],
+  },
+  {
+    id: 'sun-3',
+    date: 'Sunday',
+    title: 'Our First Kiss',
+    story: 'Some people remember places. I remember moments. Near Winnie Mandela Clinic, our first kiss happened. I\'ll never forget it. Not because of where we were, but because of who I was with.',
+    photos: ['photo_9.jpeg'],
+    isEmotionalPeak: true,
+  },
+  {
+    id: 'sun-4',
+    date: 'Sunday',
+    title: 'The Goodbye',
+    story: 'The hardest part of the weekend. A promise to see each other again, and the long walk back.',
+    photos: ['photo_10.jpeg'],
+  },
+];
