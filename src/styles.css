@@ -243,3 +243,48 @@ body {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 .polaroid-image { width: 100%; aspect-ratio: 1/1; object-fit: cover; }
+
+/* Timeline Image Constraints */
+.timeline-image {
+  display: block;
+  margin: 0 auto 1.5rem auto;
+  width: clamp(100px, 30vw, 160px);
+  height: clamp(100px, 30vw, 160px);
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.placeholder-card {
+  width: clamp(100px, 30vw, 160px);
+  height: clamp(100px, 30vw, 160px);
+  margin: 0 auto 1.5rem auto;
+  background: linear-gradient(135deg, var(--color-champagne-gold), var(--color-rose-pink));
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  font-family: var(--font-romantic);
+  font-size: 1.1rem;
+  font-style: italic;
+  line-height: 1.2;
+}
+
+/* Ensure the timeline content centers the image */
+.timeline-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.timeline-title {
+  text-align: center;
+}
+
+.timeline-story {
+  text-align: center;
+}

@@ -16,7 +16,7 @@ const TimelineItem = ({ event, index }: TimelineItemProps) => {
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.8, delay: 0.2 }}
-      className={'timeline-item ' + (isRight ? 'right' : '')}
+      className={	imeline-item }
     >
       <div className="timeline-dot" />
       <div className="timeline-content">
@@ -32,7 +32,7 @@ const TimelineItem = ({ event, index }: TimelineItemProps) => {
         )}
         
         <p className="timeline-story">{event.story}</p>
-        {event.notes && <p className="font-purpose italic" style={{fontSize: '0.8rem', color: 'var(--color-warm-grey)'}}>Note: {event.notes}</p>}
+        {event.notes && <p className="font-purpose italic" style={{fontSize: '0.8rem', color: 'var(--color-warm-grey)', textAlign: 'center'}}>Note: {event.notes}</p>}
       </div>
     </motion.div>
   );
