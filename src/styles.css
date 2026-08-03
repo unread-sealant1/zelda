@@ -176,3 +176,65 @@ body {
 .final-page { height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; background: black; color: white; }
 .final-image { width: 100vw; height: 100vh; object-fit: cover; position: absolute; z-index: -1; opacity: 0.6; }
 .final-text { font-family: var(--font-romantic); font-size: 3rem; z-index: 1; }
+
+/* Video Gallery Styles - Luxury Scrapbook Edition */
+.video-page { 
+  padding: 120px 1rem 4rem 1rem; 
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+.video-header { 
+  text-align: center; 
+  margin-bottom: 4rem; 
+}
+
+.video-header h1 { 
+  font-family: var(--font-romantic); 
+  font-size: clamp(3rem, 8vw, 4rem); 
+  color: var(--color-rose-pink); 
+  margin-bottom: 1rem; 
+}
+
+.video-grid { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+  gap: 3rem; 
+  padding: 2rem 0; 
+}
+
+.video-card {
+  background: white;
+  padding: 1rem 1rem 2.5rem 1rem;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  border-radius: 0.5rem;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  position: relative;
+  border: 1px solid var(--color-champagne-gold);
+}
+
+.video-card:hover {
+  transform: scale(1.03) translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  z-index: 10;
+}
+
+.video-element {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  border-radius: 0.3rem;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+}
+
+.video-info {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.video-caption {
+  font-family: var(--font-romantic);
+  font-size: 1.4rem;
+  color: var(--color-warm-grey);
+}

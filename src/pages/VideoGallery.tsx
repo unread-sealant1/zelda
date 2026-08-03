@@ -4,13 +4,12 @@ import { videosData } from '../data/videos';
 
 const VideoGallery = () => {
   return (
-    <div className="video-section">
-      <div className="gallery-header">
+    <div className="video-page">
+      <div className="video-header">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="font-romantic"
-          style={{fontSize: '4rem', color: 'var(--color-rose-pink)'}}
         >
           Moving Memories
         </motion.h1>
@@ -21,11 +20,14 @@ const VideoGallery = () => {
         {videosData.map((video, index) => (
           <motion.div 
             key={video.id}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ delay: index * 0.1 }}
             className="video-card"
+            style={{ 
+              rotate: (index % 2 === 0 ? 1 : -1) + 'deg' 
+            }}
           >
             <video 
               src={'/images/' + video.url} 
@@ -35,7 +37,7 @@ const VideoGallery = () => {
               loop
             />
             <div className="video-info">
-              {video.caption}
+              <p className="video-caption">{video.caption}</p>
             </div>
           </motion.div>
         ))}
