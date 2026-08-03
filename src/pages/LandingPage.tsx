@@ -12,11 +12,7 @@ const LandingPage = () => {
   return (
     <div className="landing-container">
       <div className="landing-bg-wrapper">
-        <img
-          src="https://images.unsplash.com/photo-1516589174121-9c8554437f9a?auto=format&fit=crop&q=80&w=1920"
-          className="landing-bg-image"
-          alt="Romantic Background"
-        />
+        <img src="https://images.unsplash.com/photo-1516589174121-9c8554437f9a?auto=format&fit=crop&q=80&w=1920" className="landing-bg-image" alt="Background" />
         <div className="landing-bg-overlay" />
       </div>
 
@@ -24,7 +20,7 @@ const LandingPage = () => {
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
+          transition={{ duration: 1.2 }}
           className="landing-title"
         >
           For Zelda Motsatsi Mahasha (Mrs Cass) ??
@@ -48,7 +44,6 @@ const LandingPage = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 4.5, duration: 0.8 }}
-          style={{ marginBottom: '6rem' }} 
         >
           <Link to="/timeline" className="cta-button">
             Relive Our Weekend ??
