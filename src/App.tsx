@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import Navbar from './components/organisms/Navbar';
 import LandingPage from './pages/LandingPage';
 import TimelinePage from './pages/TimelinePage';
@@ -28,6 +29,7 @@ function App() {
           <Route path="/final" element={<FinalPage />} />
           <Route path="*" element={<div style={{padding: '2rem', textAlign: 'center'}}>Coming Soon...</div>} />
         </Routes>
+        <Analytics />
       </div>
     </Router>
   );
