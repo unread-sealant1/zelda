@@ -74,9 +74,8 @@ const Date2Page = () => {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
                 whileHover={{ scale: 1.05, rotate: 0 }}
-                style={{ rotate: rotation + 'deg' }}
-                className="polaroid-frame"
                 style={{
+                  rotate: rotation + 'deg',
                   backgroundColor: 'white',
                   padding: '15px 15px 40px 15px',
                   boxShadow: '0 8px 20px rgba(0,0,0,0.1)',
@@ -84,6 +83,8 @@ const Date2Page = () => {
                   cursor: 'pointer',
                   transition: 'box-shadow 0.3s ease'
                 }}
+                className="polaroid-frame"
+                // removed duplicate style prop
               >
                 <img
                   src={'/images/' + photo.url}
