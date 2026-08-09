@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { TimelineEvent } from '../../data/types';
 
 interface TimelineItemProps {
@@ -21,10 +22,21 @@ const TimelineItem = ({ event, index }: TimelineItemProps) => {
     >
       <div className="timeline-dot" />
       <div className="timeline-content">
-        <span className="timeline-date">{event.date}</span>
-        <h3 className="timeline-title">{event.title}</h3>
-        <p className="timeline-story">{event.story}</p>
-        {event.notes && <p className="font-purpose italic" style={{fontSize: '0.8rem', color: 'var(--color-warm-grey)', textAlign: 'center', marginTop: '1rem'}}>{event.notes}</p>}
+        {event.link ? (
+          <Link to={event.link} style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}>
+            <span className="timeline-date">{event.date}</span>
+            <h3 className="timeline-title">{event.title}</h3>
+            <p className="timeline-story">{event.story}</p>
+            {event.notes && <p className="font-purpose italic" style={{fontSize: '0.8rem', color: 'var(--color-warm-grey)', textAlign: 'center', marginTop: '1rem'}}>{event.notes}</p>}
+          </Link>
+        ) : (
+          <>
+            <span className="timeline-date">{event.date}</span>
+            <h3 className="timeline-title">{event.title}</h3>
+            <p className="timeline-story">{event.story}</p>
+            {event.notes && <p className="font-purpose italic" style={{fontSize: '0.8rem', color: 'var(--color-warm-grey)', textAlign: 'center', marginTop: '1rem'}}>{event.notes}</p>}
+          </>
+        )}
       </div>
     </motion.div>
   );

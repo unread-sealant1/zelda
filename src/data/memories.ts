@@ -10,4 +10,5 @@ export const memoriesData: Memory[] = [
   { id: 'm7', title: 'The First Kiss', description: 'The most electric moment of the weekend.', highlight: 'Unforgettable', category: 'physical' },
   { id: 'm8', title: 'Shared Joy', description: 'Watching strangers smile at us because we looked so happy.', highlight: 'Radiant', category: 'emotion' },
   { id: 'm9', title: 'The Feeling', description: 'Feeling like I\'ve known you forever.', highlight: 'Destiny', category: 'emotion' },
+  { id: 'm10', title: 'DATE 02', description: '08 AUGUST 2026', highlight: 'Another day. More memories. More reasons to smile. Just us. ❤️', category: 'emotion' },
 ];

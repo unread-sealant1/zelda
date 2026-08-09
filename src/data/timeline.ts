@@ -80,4 +80,11 @@ export const timelineData: TimelineEvent[] = [
     story: 'The hardest part of the weekend. A promise to see each other again, and the long walk back.',
     photos: ['photo_10.jpeg'],
   },
-];
+  {
+    id: 'sat-date2',
+    date: 'Saturday, 08 August 2026',
+    title: 'Date 2 ❤️',
+    story: 'Another day with my woman. A day of walking, talking, laughing, and the comfort of simply being together.',
+    link: '/date2',
+  },
+}],

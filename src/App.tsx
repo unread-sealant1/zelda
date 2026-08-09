@@ -10,6 +10,7 @@ import LettersPage from './pages/LettersPage';
 import FuturePage from './pages/FuturePage';
 import CourtCasePage from './pages/CourtCasePage';
 import FinalPage from './pages/FinalPage';
+import Date2Page from './pages/Date2Page';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/letters" element={<LettersPage />} />
           <Route path="/future" element={<FuturePage />} />
           <Route path="/court-case" element={<CourtCasePage />} />
+          <Route path="/date2" element={<Date2Page />} />
           <Route path="/final" element={<FinalPage />} />
           <Route path="*" element={<div style={{padding: '2rem', textAlign: 'center'}}>Coming Soon...</div>} />
         </Routes>

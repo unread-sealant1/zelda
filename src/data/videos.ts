@@ -7,4 +7,7 @@ export const videosData = [
   { id: 'v6', url: 'WhatsApp Video 2026-08-01 at 22.36.05.mp4', caption: 'Our rhythm' },
   { id: 'v7', url: 'WhatsApp Video 2026-08-01 at 22.44.09.mp4', caption: 'Everything' },
   { id: 'v8', url: 'WhatsApp Video 2026-08-01 at 22.48.42.mp4', caption: 'The end of a perfect day' },
+  { id: 'd2-v1', url: 'Date2-1.mp4', caption: 'Moment \#9' },
+  { id: 'd2-v2', url: 'Date2-6.mp4', caption: 'Moment \#10' },
+  { id: 'd2-v3', url: 'Date2-14.mp4', caption: 'Moment \#11' },
 ];
