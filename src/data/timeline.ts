@@ -87,4 +87,4 @@ export const timelineData: TimelineEvent[] = [
     story: 'Another day with my woman. A day of walking, talking, laughing, and the comfort of simply being together.',
     link: '/date2',
   },
-}],
+];
